@@ -149,16 +149,16 @@ input::placeholder {
 
 @media (width <= 768px) {
   body {
-    height: 100vh;
-    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .container {
+    width: 80vw;
     margin: 5rem 2rem;
-    width: auto;
     max-height: 54rem;
   }
 
