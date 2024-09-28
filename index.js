@@ -42,11 +42,11 @@ citySearch.addEventListener("submit", (e) => {
 
   let cityName = document.querySelector(".city_name");
   console.log(cityName.value);
-  city = cityName.value;
+  city = cityName.value.trim();
 
   getWeatherData();
 
-  cityName.value;
+  cityName.value = "";
 });
 
 const getWeatherData = async () => {
