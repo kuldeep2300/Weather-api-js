@@ -40,13 +40,17 @@ let city = "kota";
 citySearch.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let cityName = document.querySelector(".city_name");
-  console.log(cityName.value);
-  city = cityName.value.trim();
+  try {
+    let cityName = document.querySelector(".city_name");
+    console.log(cityName.value);
+    city = cityName.value.trim();
 
-  getWeatherData();
+    getWeatherData();
 
-  cityName.value = "";
+    cityName.value = "";
+  } catch (error) {
+    alert(error);
+  }
 });
 
 const getWeatherData = async () => {
