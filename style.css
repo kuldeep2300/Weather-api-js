@@ -191,7 +191,6 @@ input::placeholder {
   }
 
   .weather_header {
-    width: ;
     flex-direction: column;
   }
 }
